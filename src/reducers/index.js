@@ -1,31 +1,11 @@
-const initialState = {
-    userDetails: {
-        signedIn: false,
-        name: 'Nengak Dakup'
-    }
-}
+import { combineReducers } from "redux";
 
-const rootReducer = (state = initialState, action) => {
-    switch (action.type) {
-        case 'LOG_IN':
-            return {
-                ...state,
-                userDetails: {
-                    ...action.payload
-                }
-            };
-        case 'CHANGE_NAME':
-            return {
-                ...state,
-                userDetails: {
-                    ...state.userDetails,
-                    name: action.payload
-                }
-            }
-    
-        default:
-            return {...state};
-    }
-};
+import AuthReducer from "./AuthReducer";
+import UtilReducer from "./UtilReducer";
+
+const rootReducer = combineReducers({
+    auth: AuthReducer,
+    util: UtilReducer
+})
 
 export default rootReducer;

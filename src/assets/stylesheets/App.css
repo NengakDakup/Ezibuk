@@ -1,3 +1,7 @@
+#root {
+  overflow-y: scroll;
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -5,25 +9,81 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  height: 50px;
+  height: 60px;
   width: 100%;
-  background-color: #7617ab;
+  background-color: #35255e;
   padding: 0 10px;
   color: #fff;
   box-shadow: -2px -3px 9px 0px rgba(41,41,41, .25);
+  z-index: 100;
+}
+
+.header-light {
+  box-shadow: none;
+  color: #111;
+  background-color: transparent;
+  height: 70px;
+}
+
+.header-light > i {
+  color: #111!important;
 }
 
 .login-top {
-  background-color: #7617ab;
-  flex: 0.3;
+  background-color: #35255e;
+  background-image: url(../images/brand.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: bottom;
+  flex: 0.4;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
+  position: relative;
 }
 
 .login-bottom {
   background-color: transparent;
-  flex: 0.8;
+  flex: 0.6;
   align-items: center;
   padding: 20px;
 }
 
+.signup-bottom {
+  background-color: transparent;
+  flex: 1;
+  align-items: center;
+  padding: 20px;
+  padding-top: 80px;
+}
+
+
+.my-toast {
+  align-self: center;
+  position: fixed;
+  bottom: 5px;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  align-items: center;
+  border-radius: 5px;
+  color: #fff;
+  z-index: 100;
+  opacity: .85;
+  transition: all.3s;
+}
+
+.my-toast span {
+  padding-left: 5px;
+}
+
+.customer-home-top {
+  flex: 0.3;
+  background-image: url('../images/brand.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: bottom;
+  color: #fff;
+  opacity: .5;
+}

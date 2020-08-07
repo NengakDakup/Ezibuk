@@ -13,10 +13,10 @@
     <feature name="Badge">
         <param name="android-package" value="de.appplant.cordova.plugin.badge.Badge" />
     </feature>
-    <name>cordovaReactApp</name>
+    <name>Ezibuk</name>
     <hook src="scripts/prebuild.js" type="before_build" />
     <description>
-        A sample Apache Cordova application that responds to the deviceready event.
+        Ezibuk Online Marketplace App.
     </description>
     <author email="dev@cordova.apache.org" href="http://cordova.io">
         Apache Cordova Team

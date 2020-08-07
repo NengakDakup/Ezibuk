@@ -14,7 +14,7 @@ class Home extends Component {
         }
     }
     componentWillMount() {
-        const {signedIn} = this.props.data.userDetails;
+        const {signedIn} = this.props.data.auth;
         if(!signedIn){
             this.props.history.push('/login');
         }
@@ -24,7 +24,7 @@ class Home extends Component {
             <div className="app">
                 <Header />
                 Home Page
-                <p>{this.props.data.userDetails.name}</p>
+                <p>{this.props.data.auth.name}</p>
                 <input type="text" placeholder="Enter Your Name" onChange={(e) => this.setState({name: e.target.value})}/>
                 <button onClick={() => this.props.changeName(this.state.name)}>Change Name</button>
             </div>
