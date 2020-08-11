@@ -28,6 +28,20 @@ export const hideBlocker = (payload) => {
     }
 }
 
+export const showDrawer = (payload) => {
+    return {
+        type: types.SHOW_DRAWER,
+        payload
+    }
+}
+
+export const hideDrawer = (payload) => {
+    return {
+        type: types.HIDE_DRAWER,
+        payload
+    }
+}
+
 export const changeName = (payload) => {
     return {
         type: types.CHANGE_NAME,

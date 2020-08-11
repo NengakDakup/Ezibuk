@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 
 function DelayUnmounting(Component) {
-    return class extends React.Component {
+    return class extends Component {
       state = {
         shouldRender: this.props.isMounted
       };

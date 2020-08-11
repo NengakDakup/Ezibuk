@@ -42,6 +42,7 @@ class Login extends Component {
 
     sendToBackend(){
         setTimeout(() => {
+            this.setLoading(false);
             this.props.history.push('/customer-home');
         }, 3000);
         // if(true){

@@ -138,6 +138,14 @@ input:focus {
   margin: 0px;
 }
 
+.ml-2 {
+  margin-left: 5px;
+}
+
+.mt-2 {
+  margin-top: 5px;
+}
+
 .btn {
   padding: 16px;
   border-radius: 7px;
@@ -180,7 +188,7 @@ input:focus {
   content: "";
   position: absolute;
   border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.747);
+  background-color: rgba(0, 0, 0, 0.747);
   width: 100px;
   height: 100px;
   margin-top: -50px;
@@ -189,6 +197,10 @@ input:focus {
   left: 50%;
   animation: ripple .6s;
   opacity: 0;
+}
+
+.ripple-effect:active::after {
+  display: block;
 }
 
 .ripple-effect:focus:not(:active)::after {
@@ -262,4 +274,25 @@ input:focus {
   font-size: 12px;
   padding: 2px 5px;
   color: red;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-light {
+  font-weight: 600;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.service-item-card p {
+  font-size: 13px;
+}
+
+.service-item-card i {
+  color: #35255e;
+  font-size: 25px;
 }

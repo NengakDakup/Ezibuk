@@ -7,6 +7,9 @@ const initialState = {
     },
     blocker: {
         display: false
+    }, 
+    drawer: {
+        display: false
     }
 }
 
@@ -36,6 +39,20 @@ const UtilReducer = (state = initialState, action) => {
             return {
                 ...state,
                 blocker: {
+                    display: false
+                }
+            };
+        case 'SHOW_DRAWER':
+            return {
+                ...state,
+                drawer: {
+                    display: true
+                }
+            };
+        case 'HIDE_DRAWER':
+            return {
+                ...state,
+                drawer: {
                     display: false
                 }
             };
